@@ -1,0 +1,22 @@
+<p>
+  list works!
+</p>
+<div class="wrapper">
+  <input type="text" #newNote (keyup)="serchTag(newNote.value)">
+  <button
+   (click)="addNote(newNote.value); newNote.value=''">
+   add
+  </button>
+  <ul>
+    <li *ngFor='let note of notes'>
+      {{note.title}}<br>
+      <span>{{note.tags}}</span><br>
+      <button (click)="deleteNote(note)">remove</button>
+      <button (click)="changeNote(note)">change</button>
+      <button (click)="deleteTags(note)">delete tags</button>
+      <button (click)="addTag(note)">add tag</button>
+    </li>
+  </ul>
+  <input type="text" #findTag>
+  <button (click)="showTags(findTag.value)">find tags</button>
+</div>

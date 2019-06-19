@@ -1,0 +1,21 @@
+.wrapper {
+  width: 30%;
+  text-align: center;
+  input {
+    outline: none;
+  }
+  ul {
+    padding: 0;
+   li {
+        list-style: none;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 10px;
+        text-align: left;
+        span {
+            color: red;
+        }
+    }
+  }
+}
