@@ -14,8 +14,11 @@
         padding: 10px;
         text-align: left;
         span {
-            color: red;
+            color: blue;
         }
     }
   }
+}
+.selected {
+  color: red;
 }
